@@ -6,6 +6,13 @@ body {
   font-size: 16px;
 }
 
+.container {
+    box-sizing: border-box;
+    max-width: 820px!important;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
 a {
   color: #3A71B0;
   text-decoration: none;
