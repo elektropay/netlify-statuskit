@@ -12,6 +12,15 @@
 <html>
   <head>
     <title>{{ $title }}</title>
+    
+    
+<meta content="" name="author">
+<link rel="shortcut icon" type="image/x-icon" href="https://cdn.everpayinc.com/elektropay/assets/favicon-6c298004c5e8a7eb846b3a356bc6d036c1a880e5d22163f4f52a7e3d6bb12109.0.delayed" />
+<link rel="apple-touch-icon" type="image/png" href="https://cdn.everpayinc.com/elektropay/assets/touch-icon-iphone.png" />
+<link rel="apple-touch-icon" type="image/png" href="https://cdn.everpayinc.com/elektropay/assets/touch-icon-ipad.png" sizes="76x76" />
+<link rel="apple-touch-icon" type="image/png" href="https://cdn.everpayinc.com/elektropay/assets/touch-icon-iphone-retina.png" sizes="120x120" />
+<link rel="apple-touch-icon" type="image/png" href="https://cdn.everpayinc.com/elektropay/assets/touch-icon-ipad-retina.png" sizes="152x152" />
+
     <link rel="stylesheet" href="/css/main.css"/>
     {{ if $major }}
       <link rel="icon" href="{{ absURL $favicons }}favicon-danger.ico">
@@ -20,8 +29,110 @@
     {{ else }}
       <link rel="icon" href="{{ absURL $favicons }}favicon-ok.ico">
     {{ end }}
+    
+     <!-- Fonts  -->
+<link href="https://fonticons-free-fonticons.netdna-ssl.com/kits/a97ca672/a97ca672.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+ <!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--/ END FONT STYLES -->
+
+<!-- Mandatory Stylesheets -->
+ 
+ <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 
+  <!-- Plugin Stylesheets -->
+
+<link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" /> 
+<link rel="stylesheet" href="https://cdn.everpayinc.com/elektropay/assets/fonts/simple-line-icons/simple-line-icons.css" type="text/css"/>
+  
+    <!-- Elektropay Styling -->
+    <link rel="stylesheet" href="https://cdn.everpayinc.com/elektropay/assets/css/elektropay.css" type="text/css">
+	
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Site Script -->
+<script src="https://cdn.everpayinc.com/elektropay/assets/js/elektropay.js"></script>
+
+   <!--[if lt IE 9]>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+        <script type="text/javascript" src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+	
+
+
+    
   </head>
   <body>
+    
+    
+<div class="wrapper">
+
+  <div id="alert-region"></div>
+  
+    <div class="navbar">
+<div class="header clearfix">
+<div class="toggle">
+<div class="toggle-bar"></div>
+<div class="toggle-bar"></div>
+<div class="toggle-bar"></div>
+</div>
+<a class="logo" href="/"><img width="140" src="https://res.cloudinary.com/lmj6rf6tz/image/upload/v1497453042/elektropay/assets/img/logo.png" alt="Logo" /></a>
+<ul class="links">
+      
+<li><a class="nav-item" href="/product/features/">Features</a></li>
+<li><a class="nav-item" href="/product/integrations/">Integrations</a></li>
+<li><a class="nav-item" href="/pricing/">Pricing</a></li>
+      
+<li class="dropdown nav-item hidden">
+<a class="dropdown-toggle"  data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" aria-expanded="false" href="javascript:void(0);">
+Customers
+</a>
+<ul class="dropdown-menu">
+<li><a href="/customers/startups_and_tech">Startups &amp; Technology Companies</a></li>
+<li><a href="/customers/sales_and_account_management">Sales &amp; Account Management</a></li>
+<li><a href="/customers/customer_service">Customer Service &amp; Client Success</a></li>
+<li><a href="/customers/business_consultants">Business Consultants &amp; Coaches</a></li>
+<li><a href="/customers/freelancers">Solopreneurs &amp; Freelancers</a></li>
+<li><a href="/customers/financial_services">Financial Services</a></li>
+<li><a href="/customers/small_businesses">Busy Professionals</a></li>
+<li><a href="/customers/retail_locations">Retail Locations</a></li>
+</ul>
+</li>
+      
+<li class="dropdown nav-item">
+<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" aria-expanded="false" href="javascript:void(0);">
+Company
+</a>
+<ul class="dropdown-menu">
+<li><a href="/company/about/">Meet The Team</a></li>
+<li><a href="/company/press">Press Releases</a></li>
+<li><a href="/company/careers/">Jobs &amp; Careers</a></li>
+<li><a href="https://blog.elektropay.com/">Elektro_lyte Blog</a></li>
+</ul>
+</li>
+      
+<li><a class="" href="/contact/">Contact</a></li>
+
+<li class="mobile-off"><a href="//app.elektropay.com/login/" class="btn-nav-primary" id="btn-login" >Log In</a></li>     
+<li class="mobile-off"><a href="//apply.elektropay.com/signup/" class="last btn-nav-secondary" data-section="navbar" href="/signup">Sign Up →</a></li>
+      
+<li class="account-options desktop-off">
+<div class="row">
+<div class="col1of2"><a  href="//app.elektropay.com/login/" class="btn-nav-primary" id="btn-login">Log In</a></div>
+<div class="col1of2"><a class="btn-nav-secondary" data-section="navbar" href="//apply.elektropay.com/signup/">Sign Up →</a></div>
+</div>
+</li>
+     
+</ul>
+</div>
+</div>
+
+    
     <div class="gangsta-wrap">
       <div class="header">
         <img src="{{ $logo }}" class="logo"/>
