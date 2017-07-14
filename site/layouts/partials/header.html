@@ -83,11 +83,12 @@
 </div>
 <a class="logo" href="/"><img width="140" src="https://res.cloudinary.com/lmj6rf6tz/image/upload/v1497453042/elektropay/assets/img/logo.png" alt="Logo" /></a>
 <ul class="links">
-      
-<li><a class="nav-item" href="/product/features/">Features</a></li>
-<li><a class="nav-item" href="/product/integrations/">Integrations</a></li>
-<li><a class="nav-item" href="/pricing/">Pricing</a></li>
-      
+       {{ with $resources }}
+            <li><a class="nav-item" href="{{ . }}" class="button resources-link">Resources</a></li>
+          {{ end }}
+          {{ with $contact }}
+           <li> <a class="nav-item" href="{{ . }}" class="button contact-link">Contact</a></li>
+          {{ end }}      
 <li class="dropdown nav-item hidden">
 <a class="dropdown-toggle"  data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" aria-expanded="false" href="javascript:void(0);">
 Customers
@@ -134,7 +135,7 @@ Company
 
     
     <div class="gangsta-wrap">
-      <div class="header">
+      <div class="header hidden">
         <img src="{{ $logo }}" class="logo"/>
         <span class="title"><a href="/">{{ $title }}</a></span>
         <div class="right-links">
